@@ -1,0 +1,377 @@
+/*-- menu de navegacion  -->
+/* General styles */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b0d3bf;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+header .logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #005f56;
+}
+
+/* titulo y slogan*/
+/* Hero Section */
+#hero {
+    position: relative; /* Necesario para las imágenes de fondo */
+    text-align: center; /* Centra el texto */
+    padding: 4rem 1rem; /* Espaciado alrededor */
+    color: #fff; /* Texto blanco */
+    font-family: 'Cambria', serif; /* Tipografía Cambria */
+    overflow: hidden; /* Oculta imágenes que están fuera de la sección */
+}
+
+/* Banner de imágenes que cambia automáticamente */
+#hero::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('planchado.jpg'), url('cepillado.jpg'), url('implementos.jpg'), url('tinturar.jpg'); /* Las 4 imágenes */
+    background-size: cover; /* Cubre el área completamente */
+    background-position: center;
+    animation: slide 4s infinite; /* Cambiar cada 4 segundos */
+    z-index: -1; /* Envía las imágenes al fondo */
+}
+
+/* Animación para el cambio de imágenes */
+@keyframes slide {
+    0%, 100% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 200% 0%; }
+    75% { background-position: 300% 0%; }
+}
+
+/* Estilo del título */
+#hero h1 {
+    font-size: 10vw; /* 10% del ancho de la ventana */
+    font-style: italic; /* Cursiva */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 0;
+}
+
+/* Estilo del párrafo */
+#hero p {
+    font-size: 4.2rem; /* Tamaño más pequeño para el párrafo */
+    font-family: 'Cambria', serif;
+    margin-top: 1rem;
+}
+
+/* Banner de imágenes que cambia automáticamente */
+#hero::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('planchado.jpg'), url('cepillado.jpg'), url('implementos.jpg'), url('tinturar.jpg'); /* Las 4 imágenes */
+    background-size: cover; /* Cubre el área completamente */
+    background-position: center;
+    animation: slide 4s infinite; /* Cambiar cada 4 segundos */
+    z-index: -1; /* Envía las imágenes al fondo */
+}
+
+/* Animación para el cambio de imágenes */
+@keyframes slide {
+    0%, 100% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 200% 0%; }
+    75% { background-position: 300% 0%; }
+}
+
+/* Estilo del título */
+#hero h1 {
+    font-size: 10vw; /* 10% del ancho de la ventana */
+    font-style: italic; /* Cursiva */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 0;
+}
+
+/* Estilo del párrafo */
+#hero p {
+    font-size: 4.2rem; /* Tamaño más pequeño para el párrafo */
+    font-family: 'Cambria', serif;
+    margin-top: 1rem;
+}
+
+/*....... servicios.......*/
+
+/* General */
+body {
+    font-family: 'Cambria', serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Sección de servicios */
+#services {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card individual */
+.card {
+    background-color: #c6dc93;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Enlace a agenda */
+.agenda-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.agenda-link a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #c6dc93;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* agenda tu cita */ 
+
+/* galeria titulo*/
+h1 {
+    font-size: 6vw; /* 10% del ancho de la ventana */
+    font-style: italic; /* Cursiva */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 0;
+    text-align: center;
+    font-family: 'Cambria', serif, ;
+}
+
+/* galeria de fotos automaticas*/ 
+.galeria {
+    background-color: #1a512e;  /* Fondo verde oscuro */
+    padding: 2rem;
+    text-align: center;}
+
+.slider{
+
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    animation-duration: 20s infinite
+    alternate linear ;
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+
+}
+.slider img{
+    width: 100%;
+    height: 100%; 
+
+}
+
+@keyframes cambio {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100;}
+    45%{ margin-left: -100;}
+
+    50%{ margin-left: -200;}
+    70%{ margin-left: -200;}
+
+    75%{ margin-left: -300;}
+    100%{ margin-left: -300;}
+}
+
+/* nuestra historia*/
+
+.carrusel{
+    display: flex;
+    overflow: scroll;
+    background-color: #c6dc93; /* Fondo verde claro */
+    color: #333;
+    text-align: center;
+    padding: 2rem 1rem; /* Aumenta el padding superior para evitar interferencias */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    margin-top: 5rem; /* Añade espacio adicional sobre la sección */
+    width: 300%;
+    height: 600px;
+
+
+
+    
+}
+
+
+
+.texto{
+    font-size: 1.5rem;
+    margin: 0.80px;
+    color: #333;
+    flex: 0. 0. auto;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+/* redes sociales*/
+/* Estilo de la sección de redes sociales */
+.redes {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;  /* Fondo claro */
+}
+
+.redes h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contenedor de los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;  /* Espacio entre los íconos */
+    align-items: center;
+    flex-wrap: wrap;  /* Permite que los íconos se ajusten en varias filas si es necesario */
+}
+
+/* Estilo de los íconos */
+.social-icons a {
+    display: inline-block;
+    width: 50px;  /* Tamaño de los íconos */
+    height: 50px;
+    background-color: #d3e29d;  /* Color de fondo minimalista */
+    border-radius: 50%;  /* Hace los íconos redondeados */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Suaviza el cambio de color y tamaño */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Estilo de las imágenes dentro de los íconos */
+.social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Asegura que los íconos no se distorsionen */
+    transition: transform 0.3s ease;  /* Suaviza la animación de escala */
+}
+
+/* Efecto hover: cambio de color de fondo y ampliación de los íconos */
+.social-icons a:hover {
+    background-color: #1a512e;  /* Cambio de color de fondo al pasar el mouse */
+    transform: scale(1.1);  /* Ampliación al pasar el mouse */
+}
+
+/* Efecto hover en las imágenes: escalado */
+.social-icons a:hover img {
+    transform: scale(1.2);  /* Ampliación suave de la imagen */
+}
+
+
+
+/* estilo pie de pagina*/
+/* Estilo del pie de página */
+footer {
+    background-color: #63a91f;  /* Fondo oscuro */
+    color: white;            /* Texto en blanco */
+    text-align: center;      /* Centra el texto */
+    padding: 1rem 0;         /* Espaciado vertical */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;               /* Elimina márgenes por defecto */
+    font-size: 1rem;         /* Tamaño de fuente */
+}
